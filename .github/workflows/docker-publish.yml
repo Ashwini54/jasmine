@@ -44,8 +44,8 @@ jobs:
         run: ls
       - name: Build 
         run: |
-           ls && docker build --rm=false . --file Dockerfile --tag jasmine_automate:1  && ls 
-           docker push  ${{ secrets.DOCKERHUB_USERNAME }}/jasmine_automate:1
+           ls && docker build --rm=false . --file Dockerfile --tag jasmine_automate  && ls 
+           docker push  ${{ secrets.DOCKERHUB_USERNAME }}/jasmine_automate
           
       # Extract metadata (tags, labels) for Docker
       # https://github.com/docker/metadata-action
