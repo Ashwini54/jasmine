@@ -44,7 +44,7 @@ jobs:
         run: ls
       - name: Build 
         run: |
-           ls && docker build --rm=false . --file Dockerfile --tag jasmine_automate:1  
+           ls && docker build --rm=false . --file Dockerfile --tag jasmine_automate:1 && ls
            cd jasmine-main && cd spec && cd html && jasmine MatchersHtmlSpec.js
            docker push ${{ secrets.DOCKERHUB_USERNAME }}/jasmine_automate:1
 #       - name: run
