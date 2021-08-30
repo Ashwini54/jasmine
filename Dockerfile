@@ -16,5 +16,5 @@ ENV JAVA_HOME="/usr/lib/jvm/java-11-openjdk-amd64/bin"  PATH=$PATH:$JAVA_HOME
 
 RUn ls
 # # cloning Jasmine repo
-# RUN git clone https://github.com/jasmine/jasmine.git 
-# RUN cd jasmine/spec/html && jasmine MatchersHtmlSpec.js
+RUN git clone https://github.com/jasmine/jasmine.git 
+RUN cd jasmine/spec/html && jasmine MatchersHtmlSpec.js
